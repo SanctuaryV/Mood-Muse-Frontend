@@ -33,7 +33,7 @@ const SongPage = () => {
         setError(null);
 
         const response = await fetch(
-          `http://192.168.1.114:5000/api/songs/${selectedMood}/${selectedGenre}`
+          `http://localhost:5000/api/songs/${selectedMood}/${selectedGenre}`
         );
 
         if (!response.ok) {

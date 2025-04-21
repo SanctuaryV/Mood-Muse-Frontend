@@ -14,7 +14,7 @@ const ChatBot = () => {
     setChatHistory(prev => [...prev, { type: 'user', text: message }]);
     
     try {
-      const response = await fetch('http://192.168.1.114:5000/api/chatbot/chat', {
+      const response = await fetch('http://localhost:5000/api/chatbot/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
