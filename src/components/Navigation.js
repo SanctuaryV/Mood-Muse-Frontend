@@ -10,10 +10,22 @@ const Navigation = () => {
         <span>Mood Muse</span>
       </Link>
       <div className="nav-links">
-        <Link to="/horoscope" className="nav-link">🔮ดูดวงประจำวัน</Link>
-        <Link to="/book" className="nav-link">📚หนังสือ</Link>
-        <Link to="/music" className="nav-link">🎵เพลง</Link>
-        <Link to="/food" className="nav-link">🍜อาหาร</Link>
+        <Link to="/horoscope" className="nav-link">
+          <span className="nav-emoji">🔮</span>
+          <span className="nav-text">ดูดวงประจำวัน</span>
+        </Link>
+        <Link to="/book" className="nav-link">
+          <span className="nav-emoji">📚</span>
+          <span className="nav-text">หนังสือ</span>
+        </Link>
+        <Link to="/music" className="nav-link">
+          <span className="nav-emoji">🎵</span>
+          <span className="nav-text">เพลง</span>
+        </Link>
+        <Link to="/food" className="nav-link">
+          <span className="nav-emoji">🍜</span>
+          <span className="nav-text">อาหาร</span>
+        </Link>
       </div>
     </nav>
   );

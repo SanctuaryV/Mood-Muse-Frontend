@@ -43,7 +43,7 @@ const ChatBot = () => {
           className="chatbot-toggle"
           onClick={() => setIsOpen(true)}
         >
-          💬
+          <span>💬</span>
         </button>
       ) : (
         <div className="chatbot-popup">

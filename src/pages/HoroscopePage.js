@@ -150,15 +150,15 @@ const HoroscopePage = () => {
             <h2>คำทำนายประจำวัน</h2>
             <div className="prediction-card">
               <div className="prediction-stats">
-                <div className="stat">
+                <div className="stat love">
                   <span className="label">ความรัก</span>
                   <span className="stars">{prediction.love}</span>
                 </div>
-                <div className="stat">
+                <div className="stat work">
                   <span className="label">การงาน</span>
                   <span className="stars">{prediction.career}</span>
                 </div>
-                <div className="stat">
+                <div className="stat health">
                   <span className="label">สุขภาพ</span>
                   <span className="stars">{prediction.health}</span>
                 </div>
