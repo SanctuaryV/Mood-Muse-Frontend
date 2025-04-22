@@ -84,6 +84,11 @@ const HoroscopePage = () => {
         throw new Error(data.error);
       }
 
+      // ตรวจสอบว่ามีข้อมูลที่ต้องการครบถ้วนหรือไม่
+      if (!data.data || !data.data.love || !data.data.career || !data.data.health || !data.data.message) {
+        throw new Error('ข้อมูลที่ได้รับไม่ครบถ้วน');
+      }
+
       console.log('✅ Prediction data:', data.data);
       setPrediction(data.data);
     } catch (error) {
