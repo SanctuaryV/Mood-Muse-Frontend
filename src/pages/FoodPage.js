@@ -85,7 +85,7 @@ const FoodPage = () => {
         const moodValue = encodeURIComponent(selectedMood.value)
         const cuisineName = encodeURIComponent(cuisine.name)
 
-        const apiUrl = `http://localhost:5000/api/food/${moodValue}/${cuisineName}`
+        const apiUrl = `https://mood-muse-backend.onrender.com/api/food/${moodValue}/${cuisineName}`
 
         console.log('เรียก API URL:', apiUrl)
 

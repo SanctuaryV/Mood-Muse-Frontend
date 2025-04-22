@@ -85,7 +85,7 @@ const BookPage = () => {
         const moodValue = encodeURIComponent(selectedMood.value)
         const genreName = encodeURIComponent(genre.name)
 
-        const apiUrl = `http://localhost:5000/api/books/${moodValue}/${genreName}`
+        const apiUrl = `https://mood-muse-backend.onrender.com/api/books/${moodValue}/${genreName}`
 
         console.log('เรียก API URL:', apiUrl)
 

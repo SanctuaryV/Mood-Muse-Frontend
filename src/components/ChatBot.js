@@ -14,7 +14,7 @@ const ChatBot = () => {
     setChatHistory(prev => [...prev, { type: 'user', text: message }]);
     
     try {
-      const response = await fetch('http://localhost:5000/api/chatbot/chat', {
+      const response = await fetch('https://mood-muse-backend.onrender.com/api/chatbot/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
