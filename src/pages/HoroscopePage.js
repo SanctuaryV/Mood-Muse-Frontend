@@ -66,27 +66,25 @@ const HoroscopePage = () => {
     setLoading(true);
     setPrediction(null);
 
-    const prompt = `
-วันนี้ฉันรู้สึก "${selectedMood.label}" และฉันเกิดราศี "${zodiac.name}"
-กรุณาทำนายดวงวันนี้ให้หน่อยค่ะ
-โดยให้คำทำนายออกมาในโทนภาษาไทยที่อ่อนโยน น่ารัก และเป็นกำลังใจ
-แบ่งออกเป็นหัวข้อ: ความรัก, การงาน, สุขภาพ และ ข้อความรวม
-ใส่ Emoji เล็กน้อยเพื่อเพิ่มความสดใส 😊`;
-
     try {
       const response = await fetch('https://mood-muse-backend.onrender.com/api/horoscope', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt })
+        body: JSON.stringify({ 
+          mood: selectedMood,
+          zodiac: zodiac
+        })
       });
 
       const data = await response.json();
+      console.log('📥 Response from backend:', data);
 
       if (!data.success) {
         console.error('❌ Error from backend:', data.error);
         throw new Error(data.error);
       }
 
+      console.log('✅ Prediction data:', data.data);
       setPrediction(data.data);
     } catch (error) {
       console.error('❌ Error in frontend:', error);
