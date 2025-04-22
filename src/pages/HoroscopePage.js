@@ -74,7 +74,7 @@ const HoroscopePage = () => {
 ใส่ Emoji เล็กน้อยเพื่อเพิ่มความสดใส 😊`;
 
     try {
-      const response = await fetch('http://localhost:5000/api/horoscope', {
+      const response = await fetch('https://mood-muse-backend.onrender.com/api/horoscope', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
