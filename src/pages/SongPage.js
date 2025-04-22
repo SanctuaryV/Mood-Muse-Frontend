@@ -33,7 +33,7 @@ const SongPage = () => {
         setError(null);
 
         const response = await fetch(
-          `http://localhost:5000/api/songs/${selectedMood}/${selectedGenre}`
+          `https://mood-muse-backend.onrender.com/api/songs/${selectedMood}/${selectedGenre}`
         );
 
         if (!response.ok) {
