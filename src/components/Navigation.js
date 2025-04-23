@@ -6,25 +6,28 @@ const Navigation = () => {
   return (
     <nav className="nav-bar">
       <Link to="/" className="nav-logo">
-        <span>🧠</span>
-        <span>Mood Muse</span>
+        <span>🧠</span> Mood Muse
       </Link>
       <div className="nav-links">
         <Link to="/horoscope" className="nav-link">
+          <span className="nav-text">ดูดวง</span>
           <span className="nav-emoji">🔮</span>
-          <span className="nav-text">ดูดวงประจำวัน</span>
+        </Link>
+        <Link to="/relax" className="nav-link">
+          <span className="nav-text">ที่พักใจ</span>
+          <span className="nav-emoji">💆‍♀️</span>
         </Link>
         <Link to="/book" className="nav-link">
-          <span className="nav-emoji">📚</span>
           <span className="nav-text">หนังสือ</span>
+          <span className="nav-emoji">📚</span>
         </Link>
         <Link to="/music" className="nav-link">
-          <span className="nav-emoji">🎵</span>
           <span className="nav-text">เพลง</span>
+          <span className="nav-emoji">🎵</span>
         </Link>
         <Link to="/food" className="nav-link">
-          <span className="nav-emoji">🍜</span>
           <span className="nav-text">อาหาร</span>
+          <span className="nav-emoji">🍜</span>
         </Link>
       </div>
     </nav>
