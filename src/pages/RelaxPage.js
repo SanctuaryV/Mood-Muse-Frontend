@@ -19,7 +19,7 @@ const RelaxPage = () => {
     setResponse('');
 
     try {
-      const response = await fetch('https://mood-muse-backend.onrender.com/api/relax', {
+      const response = await fetch('https://mood-muse-py.onrender.com/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
