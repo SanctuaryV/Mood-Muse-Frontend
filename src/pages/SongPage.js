@@ -4,7 +4,7 @@ import './SongPage.css';
 const moods = [
   { emoji: '😊', label: 'happy', description: 'มีความสุข' },
   { emoji: '😢', label: 'sad', description: 'เศร้า' },
-  { emoji: '😠', label: 'angry', description: 'โกรธ' },
+  { emoji: '😡', label: 'angry', description: 'โกรธ' },
   { emoji: '😰', label: 'anxious', description: 'กังวล' },
   { emoji: '😴', label: 'tired', description: 'เหนื่อย' },
   { emoji: '😌', label: 'relaxed', description: 'ผ่อนคลาย' }
