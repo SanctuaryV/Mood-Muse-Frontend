@@ -39,11 +39,6 @@ const Home = () => {
             <h3>ดูดวง</h3>
             <p>ดูดวงรายวันตามราศีของคุณ</p>
           </Link>
-          {/* <Link to="/relax" className="feature-card">
-            <div className="feature-icon">💆‍♀️</div>
-            <h3>ที่พักใจ</h3>
-            <p>แบ่งปันความรู้สึกและรับคำแนะนำ</p>
-          </Link> */}
           <Link to="/book" className="feature-card">
             <div className="feature-icon">📚</div>
             <h3>หนังสือ</h3>
@@ -59,6 +54,11 @@ const Home = () => {
             <h3>แนะนำอาหาร</h3>
             <p>ค้นหาอาหารที่เหมาะกับอารมณ์ของคุณ</p>
           </a>
+          <Link className="feature-card">
+            <div className="feature-icon">💆‍♀️</div>
+            <h3>ที่พักใจ</h3>
+            <p>Coming Soon...</p>
+          </Link>
         </div>
       </section>
     </div>
