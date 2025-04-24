@@ -13,10 +13,10 @@ const Navigation = () => {
           <span className="nav-text">ดูดวง</span>
           <span className="nav-emoji">🔮</span>
         </Link>
-        <Link to="/relax" className="nav-link">
+        {/* <Link to="/relax" className="nav-link">
           <span className="nav-text">ที่พักใจ</span>
           <span className="nav-emoji">💆‍♀️</span>
-        </Link>
+        </Link> */}
         <Link to="/book" className="nav-link">
           <span className="nav-text">หนังสือ</span>
           <span className="nav-emoji">📚</span>

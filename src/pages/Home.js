@@ -39,11 +39,11 @@ const Home = () => {
             <h3>ดูดวง</h3>
             <p>ดูดวงรายวันตามราศีของคุณ</p>
           </Link>
-          <Link to="/relax" className="feature-card">
+          {/* <Link to="/relax" className="feature-card">
             <div className="feature-icon">💆‍♀️</div>
             <h3>ที่พักใจ</h3>
             <p>แบ่งปันความรู้สึกและรับคำแนะนำ</p>
-          </Link>
+          </Link> */}
           <Link to="/book" className="feature-card">
             <div className="feature-icon">📚</div>
             <h3>หนังสือ</h3>
